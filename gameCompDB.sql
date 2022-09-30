@@ -2,7 +2,9 @@ Create DATABASE if not exists GameCompDB;
 use GameCompDB;
 
 create table if not exists Customer(
-	# All information om kunden
+	/* All information om kunden är nu structurerad på så sätt att all information som är relevanta med varandra blir grupperade
+	   Detta gör det enklare att göra ändringar i framtiden då det undelättar felsökning samt gör koden mer läsbar 
+	*/
     customerID int auto_increment,
     personID int,
     productID int,
